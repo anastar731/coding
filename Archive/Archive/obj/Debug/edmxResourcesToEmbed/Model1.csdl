@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbDocArchiveModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tbldata_documents">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="headertext" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="numorder" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="doctype" Type="Int32" Nullable="false" />
+    <Property Name="docdate" Type="DateTime" Precision="0" Nullable="false" />
+    <Property Name="path" Type="String" MaxLength="8000" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="dbDocArchiveEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbldata_documents" EntityType="Self.tbldata_documents" />
+  </EntityContainer>
+</Schema>

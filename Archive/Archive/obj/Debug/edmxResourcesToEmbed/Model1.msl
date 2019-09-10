@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbDocArchiveModelStoreContainer" CdmEntityContainer="dbDocArchiveEntities1">
+    <EntitySetMapping Name="tbldata_documents">
+      <EntityTypeMapping TypeName="dbDocArchiveModel.tbldata_documents">
+        <MappingFragment StoreEntitySet="tbldata_documents">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="headertext" ColumnName="headertext" />
+          <ScalarProperty Name="numorder" ColumnName="numorder" />
+          <ScalarProperty Name="doctype" ColumnName="doctype" />
+          <ScalarProperty Name="docdate" ColumnName="docdate" />
+          <ScalarProperty Name="path" ColumnName="path" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
